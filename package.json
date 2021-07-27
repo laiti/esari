@@ -1,5 +1,5 @@
 {
-  "name": "esari",
+  "name": "esa",
   "version": "0.0.1",
   "description": "Cypress.io project",
   "main": "compiled/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laiti/esari.git"
+    "url": "git+https://github.com/laiti/esa.git"
   },
   "keywords": [
     "cypress.io"
@@ -17,9 +17,9 @@
   "author": "Antti Laiti <antti@laiti.fi>",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/laiti/esari/issues"
+    "url": "https://github.com/laiti/esa/issues"
   },
-  "homepage": "https://github.com/laiti/esari#readme",
+  "homepage": "https://github.com/laiti/esa#readme",
   "devDependencies": {
     "cypress": "^7.5.0"
   },
