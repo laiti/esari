@@ -1,49 +1,11 @@
-import os from 'os';
-import { CSVData as _CSVData } from '../../data/csvdata.js';
-
-
-// TEMP: Variables from CSV
-const format = 'Can';
-const aroma = 1;
-const appearance = 2;
-const flavor = 3;
-const mouthfeel = 4;
-const overall = 5;
-
-// Slider classes
-const sliderClasses = {
-    0: 'hRiarj',
-    1: 'cvIRpx',
-    2: 'dBWBq',
-    3: 'dntIqb',
-    4: 'kEsWct',
-    5: 'fXCPLY',
-    6: 'ibtkUr',
-    7: 'oFseU',
-    8: 'kqPTBY',
-    9: 'ywDJh',
-    10: 'fjDdZP',
-    11: 'fIZvXG',
-    12: 'cXmNnE',
-    13: 'kpsOiU',
-    14: 'eHBGGW',
-    15: 'bEiHuf',
-    16: 'hAbJBB',
-    17: 'fTdEjy',
-    18: 'fWvzMO',
-    19: 'eamjUa',
-    20: 'jHIuhD',
-}
-
-const sliderDivClass = 'div > div[class="Slider___StyledDiv-kfCDlB dxmuNj"] > div > div > div[class="Slider__Tick-gLnXwE Slider___StyledTick-dNReAI';
-
-describe('Login to Ratebeer and post rating', () => {
-    it('Login to Ratebeer', () => {
+describe('Login to 4G router and change band', () => {
+    it('Login to 4G router', () => {
         cy.viewport(1280,1280);
-        cy.visit('https://www.ratebeer.com/');
-        cy.contains('Log In').click();
-        cy.get('input[name=username]').type(Cypress.env('RB_USERNAME'));
-        cy.get('input[name=password]').type(Cypress.env('RB_PASSWORD'));
+        cy.visit('http://192.168.1.1');
+        cy.contains('LTE3301').should('exist');
+        cy.contains('Welcome to the configuration interface. Please enter username and password to login.').should('exist');
+        cy.get('input[name=username]').type(Cypress.env('ESARI_USERNAME'));
+        cy.get('input[name=password]').type(Cypress.env('ESARI_PASSWORD'));
         cy.contains('Accept All Cookies').click();
         cy.get('.auth0-label-submit').contains('Log In').click();
         cy.contains('Thanks for logging in').should('exist');
