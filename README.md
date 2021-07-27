@@ -1,7 +1,7 @@
-# kolvi
-Cypress.io project to input scores from CSV to ratebeer.com.
+# esa
+Cypress.io project to change band in 4G modem
 
 ### Quick start guide
-- Set environment variables: `CYPRESS_RB_USERNAME` and `CYPRESS_RB_PASSWORD`
+- Set environment variables: `CYPRESS_ESA_USERNAME` and `CYPRESS_ESA_PASSWORD`
 - Run `npm install` && `npm run cypress`
-- Click ratebeer.js in the bottom of the list
+- Click modem.js in the bottom of the list

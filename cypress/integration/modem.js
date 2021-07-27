@@ -6,6 +6,9 @@ describe('Login to 4G router and change band', () => {
         cy.contains('Welcome to the configuration interface. Please enter username and password to login.').should('exist');
         cy.get('input[name=username]').type(Cypress.env('ESA_USERNAME'));
         cy.get('input[name=password]').type(Cypress.env('ESA_PASSWORD'));
+    
+        /*
+        
         cy.contains('Accept All Cookies').click();
         cy.get('.auth0-label-submit').contains('Log In').click();
         cy.contains('Thanks for logging in').should('exist');
@@ -48,6 +51,7 @@ describe('Login to 4G router and change band', () => {
                 cy.writeFile('data/failed.txt', `${rating.link}${os.EOL}`, { flag: 'a+' });
             })
         }
+        */
     })
 })
   
