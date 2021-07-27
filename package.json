@@ -1,6 +1,6 @@
 {
-  "name": "kolvi",
-  "version": "1.0.0",
+  "name": "esari",
+  "version": "0.0.1",
   "description": "Cypress.io project",
   "main": "compiled/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laiti/kolvi.git"
+    "url": "git+https://github.com/laiti/esari.git"
   },
   "keywords": [
     "cypress.io"
@@ -17,9 +17,9 @@
   "author": "Antti Laiti <antti@laiti.fi>",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/laiti/kolvi/issues"
+    "url": "https://github.com/laiti/esari/issues"
   },
-  "homepage": "https://github.com/laiti/kolvi#readme",
+  "homepage": "https://github.com/laiti/esari#readme",
   "devDependencies": {
     "cypress": "^7.5.0"
   },
