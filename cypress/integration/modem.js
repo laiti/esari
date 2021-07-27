@@ -4,8 +4,8 @@ describe('Login to 4G router and change band', () => {
         cy.visit('http://192.168.1.1');
         cy.contains('LTE3301').should('exist');
         cy.contains('Welcome to the configuration interface. Please enter username and password to login.').should('exist');
-        cy.get('input[name=username]').type(Cypress.env('ESARI_USERNAME'));
-        cy.get('input[name=password]').type(Cypress.env('ESARI_PASSWORD'));
+        cy.get('input[name=username]').type(Cypress.env('ESA_USERNAME'));
+        cy.get('input[name=password]').type(Cypress.env('ESA_PASSWORD'));
         cy.contains('Accept All Cookies').click();
         cy.get('.auth0-label-submit').contains('Log In').click();
         cy.contains('Thanks for logging in').should('exist');
