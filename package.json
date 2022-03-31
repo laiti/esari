@@ -21,9 +21,6 @@
   },
   "homepage": "https://github.com/laiti/esa#readme",
   "devDependencies": {
-    "cypress": "^8.0.0"
-  },
-  "dependencies": {
-    "csv-parser": "^3.0.0"
+    "cypress": "^9.5.3"
   }
 }
